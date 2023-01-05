@@ -18,7 +18,7 @@ def language_detection(text):
     result = response.json()["langCode"]
     return result
 
-@st.experimental_memo
+# @st.experimental_memo
 def translate(text, source, target):
     if source == target :
         return
