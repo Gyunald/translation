@@ -36,7 +36,7 @@ def translate(text, source, target):
 
 lang_list = ['한국어(ko)','영어(en)','일본어(ja)','중국어 간체(zh-CN)','중국어 번체(zh-TW)','스페인어(es)','프랑스어(fr)','독일어(de)', '베트남어(vi)','인도네시아어(id)','러시아어(ru)','이탈리아어(it)']
 # '힌디어(hi)' , '포르투갈어(pt)' , '페르시아어(fa)', '아랍어(ar)', '미얀마어(mm)'
-lang = st.multiselect('언어',lang_list,)
+lang = st.multiselect('언어 다중선택',lang_list,default=[lang_list[1],lang_list[2]])
 text = st.text_area('입력',placeholder='text here', key='text',value='',max_chars=300)
 if text :
     for index, i in enumerate(range(len(lang))):
