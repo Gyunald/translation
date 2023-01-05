@@ -1,0 +1,6 @@
+BeautifulSoup4
+lxml
+matplotlib
+requests
+streamlit_lottie
+streamlit
